@@ -1,4 +1,4 @@
-package main.coding.codingconvent;
+package coding.codingconvent;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

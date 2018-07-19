@@ -1,4 +1,4 @@
-package main.thread.entity;
+package thread.entity;
 
 public class Producer implements Runnable {
 

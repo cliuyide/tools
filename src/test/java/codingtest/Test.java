@@ -1,8 +1,8 @@
-package test.codingtest;
+package codingtest;
 
 import java.io.UnsupportedEncodingException;
 
-import main.coding.codingconvent.CodingConvent;
+import coding.codingconvent.CodingConvent;
 
 public class Test {
     public static void main(String[] args) throws UnsupportedEncodingException {

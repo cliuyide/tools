@@ -1,4 +1,4 @@
-package main.math.suanfa;
+package math.suanfa;
 
 import java.util.HashMap;
 import java.util.Map;

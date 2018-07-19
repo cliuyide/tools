@@ -1,4 +1,4 @@
-package main.math.suanfa;
+package math.suanfa;
 
 import java.util.ArrayList;
 import java.util.List;

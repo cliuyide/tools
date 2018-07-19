@@ -1,6 +1,6 @@
-package test.math;
+package math;
 
-import main.math.suanfa.FractionToRecurringDecimal;
+import math.suanfa.FractionToRecurringDecimal;
 
 public class MathTest {
     public static void main(String[] args) {
