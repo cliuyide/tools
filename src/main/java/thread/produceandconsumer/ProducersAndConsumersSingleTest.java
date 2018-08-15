@@ -1,4 +1,4 @@
-package thread;
+package thread.produceandconsumer;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package thread.entity;
+package thread.produceandconsumer.entity;
 
 public class Consumer implements Runnable {
 
