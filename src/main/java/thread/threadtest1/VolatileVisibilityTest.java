@@ -1,14 +1,12 @@
 package thread.threadtest1;
 
-import java.util.concurrent.TimeUnit;
-
 public class VolatileVisibilityTest {
 	private boolean flag = true;
 
 	void circle() {
 		System.out.println("start");
 		while (flag) {
-			System.out.println("dsl");
+
 		}
 		System.out.println("end");
 	}
@@ -17,7 +15,16 @@ public class VolatileVisibilityTest {
 		VolatileVisibilityTest v = new VolatileVisibilityTest();
 		Thread t1 = new Thread(v::circle, "circleThread");
 		t1.start();
-		TimeUnit.SECONDS.sleep(1);
-		v.flag = false;
+		Thread currentThread = Thread.currentThread();
+		System.out.println(currentThread.getState());
+		while (true) {
+			Thread.yield();
+			System.out.println(currentThread.getState());
+			if (currentThread.getState().equals(Thread.State.RUNNABLE)) {
+				break;
+			}
+		}
+		// TimeUnit.SECONDS.sleep(1);
+		// v.flag = false;
 	}
 }
